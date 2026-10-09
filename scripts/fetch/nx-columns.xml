@@ -1,0 +1,15 @@
+<fetch>
+  <entity name="attribute">
+    <attribute name="logicalname" />
+    <attribute name="attributetypename" />
+    <attribute name="maxlength" />
+    <attribute name="requiredlevel" />
+    <filter>
+      <condition attribute="logicalname" operator="like" value="nx_%" />
+    </filter>
+    <link-entity name="entity" from="entityid" to="entityid" alias="e">
+      <attribute name="logicalname" />
+    </link-entity>
+    <order attribute="logicalname" />
+  </entity>
+</fetch>

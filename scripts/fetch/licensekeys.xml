@@ -1,0 +1,11 @@
+<fetch>
+  <entity name="nx_licensekey">
+    <attribute name="nx_key" />
+    <attribute name="nx_status" />
+    <attribute name="nx_duedate" />
+    <attribute name="nx_expiredate" />
+    <attribute name="nx_repocapacity" />
+    <attribute name="nx_boundorgalias" />
+    <order attribute="createdon" descending="true" />
+  </entity>
+</fetch>

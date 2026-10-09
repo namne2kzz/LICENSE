@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_nx_activation" />
+  <EntityRelationship Name="business_unit_nx_customer" />
+  <EntityRelationship Name="business_unit_nx_licensekey" />
+  <EntityRelationship Name="business_unit_nx_licenseplan" />
+  <EntityRelationship Name="business_unit_nx_orgrequest" />
+  <EntityRelationship Name="lk_nx_activation_createdby" />
+  <EntityRelationship Name="lk_nx_activation_modifiedby" />
+  <EntityRelationship Name="lk_nx_customer_createdby" />
+  <EntityRelationship Name="lk_nx_customer_modifiedby" />
+  <EntityRelationship Name="lk_nx_licensekey_createdby" />
+  <EntityRelationship Name="lk_nx_licensekey_modifiedby" />
+  <EntityRelationship Name="lk_nx_licenseplan_createdby" />
+  <EntityRelationship Name="lk_nx_licenseplan_modifiedby" />
+  <EntityRelationship Name="lk_nx_orgrequest_createdby" />
+  <EntityRelationship Name="lk_nx_orgrequest_modifiedby" />
+  <EntityRelationship Name="nx_activation_LicenseKey_nx_licensekey" />
+  <EntityRelationship Name="nx_licensekey_Customer_nx_customer" />
+  <EntityRelationship Name="nx_licensekey_Plan_nx_licenseplan" />
+  <EntityRelationship Name="nx_orgrequest_LicenseKey_nx_licensekey" />
+  <EntityRelationship Name="owner_nx_activation" />
+  <EntityRelationship Name="owner_nx_customer" />
+  <EntityRelationship Name="owner_nx_licensekey" />
+  <EntityRelationship Name="owner_nx_licenseplan" />
+  <EntityRelationship Name="owner_nx_orgrequest" />
+  <EntityRelationship Name="team_nx_activation" />
+  <EntityRelationship Name="team_nx_customer" />
+  <EntityRelationship Name="team_nx_licensekey" />
+  <EntityRelationship Name="team_nx_licenseplan" />
+  <EntityRelationship Name="team_nx_orgrequest" />
+  <EntityRelationship Name="user_nx_activation" />
+  <EntityRelationship Name="user_nx_customer" />
+  <EntityRelationship Name="user_nx_licensekey" />
+  <EntityRelationship Name="user_nx_licenseplan" />
+  <EntityRelationship Name="user_nx_orgrequest" />
+</EntityRelationships>

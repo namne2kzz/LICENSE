@@ -1,0 +1,13 @@
+<fetch>
+  <entity name="solution">
+    <attribute name="uniquename" />
+    <attribute name="version" />
+    <filter>
+      <condition attribute="uniquename" operator="eq" value="NexusLicensing" />
+    </filter>
+    <link-entity name="publisher" from="publisherid" to="publisherid" alias="pub">
+      <attribute name="uniquename" />
+      <attribute name="customizationprefix" />
+    </link-entity>
+  </entity>
+</fetch>
