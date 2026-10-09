@@ -1,7 +1,11 @@
-# LICENSE — Nexus Licensing (Power Platform) — Claude Instructions
+# NKey — License service (Power Platform) — Claude Instructions
 
-> Service onboarding & license cho **DASHBOARD** + **HUB**, xây trên **Power Platform / Dataverse**.
+> Onboarding & license cho **DASHBOARD** + **HUB**, xây trên **Power Platform / Dataverse**.
 > Repo riêng (`C:\DEV\LICENSE`), cùng mô hình tách service với HUB. Đọc `README.md` để biết vì sao service này tồn tại.
+>
+> **Tên sản phẩm: NKey.** Định danh kỹ thuật trên Dataverse giữ nguyên (không đổi được sau khi tạo):
+> solution `NexusLicensing` · prefix `nx_` · namespace `Nexus.Licensing.Plugins`.
+> Dùng "NKey" ở văn xuôi/UI; dùng tên kỹ thuật khi nói về solution, bảng, assembly.
 
 ## Stack
 

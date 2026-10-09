@@ -1,7 +1,11 @@
-# LICENSE — Nexus Licensing (Power Platform)
+# NKey — License service (Power Platform)
 
-> Service onboarding & license cho hệ sinh thái **DASHBOARD** + **HUB**, xây trên **Power Platform / Dataverse**.
+> Onboarding & license cho hệ sinh thái **DASHBOARD** + **HUB**, xây trên **Power Platform / Dataverse**.
 > Repo riêng, tách khỏi DASHBOARD — cùng mô hình với HUB.
+>
+> ℹ️ **NKey** là tên sản phẩm. Các định danh kỹ thuật trên Dataverse giữ nguyên vì không đổi được
+> sau khi tạo: solution unique name `NexusLicensing`, publisher prefix `nx_`, namespace plug-in
+> `Nexus.Licensing.Plugins`.
 
 ---
 

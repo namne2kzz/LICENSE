@@ -12,7 +12,7 @@
 | Bảng | 5 · 45 column tự tạo · 3 optionset global |
 | Relationship | 4, **tất cả `Restrict`** |
 | Alternate key | `nx_UniqueLicenseKey` trên `nx_key` — Active |
-| Model-driven app | `Nexus Licensing`, 5 page |
+| Model-driven app | `NKey`, 5 page |
 | Dữ liệu | 3 License Plan: TRIAL (3/3th) · STD (10/12th/grace 15) · ENT (50/12th/grace 30) |
 | Trong git | `solution/NexusLicensing/` — 90 file |
 

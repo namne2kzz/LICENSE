@@ -1,4 +1,4 @@
-# Data model — Nexus Licensing (Dataverse)
+# Data model — NKey (Dataverse)
 
 > Bản **chuẩn** để tạo table. Rà lại dựa trên nghiệp vụ thật của DASHBOARD
 > (`Domain/Entities/Organization.cs`, `OrganizationConfiguration.cs`, `CreateRepositoryCommandHandler.cs`,
