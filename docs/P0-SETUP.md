@@ -134,3 +134,52 @@ QR bằng app điện thoại. Khi login PRT, nếu push notification bị treo 
 
 [P1-DATA-MODEL.md](P1-DATA-MODEL.md) — quy trình tạo bảng
 [DATA-MODEL.md](DATA-MODEL.md) — đặc tả bảng/cột
+
+---
+
+## 💰 Đã huỷ M365 trial (2026-10-14) — NKey không ảnh hưởng
+
+M365 Business Basic trial đăng ký 2026-09-20 chỉ để **lấy work/school account**, vì email cá nhân
+không đăng ký được Power Apps Developer Plan.
+
+**Đã huỷ ngày 14/10**, trước ngày gia hạn **19/10**. Lý do huỷ:
+
+| | |
+|---|---|
+| Purchased quantity | **25 seats** |
+| Pricing model | **Paid** (hiển thị `$0.00` chỉ là giá của kỳ trial đang chạy) |
+| Nếu để gia hạn | ~$6/user/tháng × 25 ≈ **$150/tháng** |
+
+> ⚠️ Cột **"Renewal or expiration"** ở Billing → Your products dùng **một ngày cho cả hai nghĩa** —
+> không phân biệt được "gia hạn" hay "hết hạn". Phải mở trang chi tiết subscription mới biết
+> recurring billing đang On hay Off.
+
+### Đã kiểm chứng sau khi huỷ — mọi thứ còn nguyên
+
+```
+pac org who                 → Connected to Nexus-Dev ✅
+pac solution list           → NexusLicensing 1.0.0.0 ✅
+pac env fetch licenseplans  → 3 bản ghi TRIAL/STD/ENT ✅
+.\scripts\verify-schema.ps1 → === P1 HOAN TAT === ✅
+```
+
+**Vì sao không ảnh hưởng:**
+
+| Thành phần | Thuộc gói | Sau khi huỷ |
+|---|---|---|
+| Tài khoản `admin@<tenant>.onmicrosoft.com` | **Microsoft Entra ID Free** (miễn phí vĩnh viễn) | ✅ Còn login được |
+| Environment + Dataverse | **Power Apps Developer Plan** (gói riêng, miễn phí) | ✅ Còn |
+| 5 bảng, plug-in, model-driven app | Dataverse | ✅ Còn |
+| Exchange mail / Teams / SharePoint | M365 Business Basic | ❌ Mất — NKey không dùng |
+
+Business Basic chỉ cấp **quyền dùng dịch vụ M365** cho tài khoản, không phải bản thân tài khoản.
+Quyền sửa Dataverse đến từ **security role trong environment** + Developer Plan — độc lập hoàn toàn.
+
+### Nếu sau này cần M365 trở lại
+
+Mua lại được bất cứ lúc nào (Billing → Purchase services), nhưng **không còn trial miễn phí** —
+Microsoft chỉ cho một trial cho mỗi sản phẩm trên mỗi tenant. Khi đó mua **1 seat** là đủ, không
+phải 25.
+
+Chỉ cần khi muốn gửi/nhận email thật qua tenant, dùng Teams/SharePoint, hoặc test Power Automate
+với connector Outlook ở P4 *(có thể thay bằng SMTP hoặc connector khác)*.
