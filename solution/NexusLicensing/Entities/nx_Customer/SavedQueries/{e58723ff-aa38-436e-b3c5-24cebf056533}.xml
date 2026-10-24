@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e58723ff-aa38-436e-b3c5-24cebf056533}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nx_customername" select="1" icon="1" preview="1">
+        <row name="result" id="nx_customerid">
+          <cell name="nx_customername" width="300" />
+          <cell name="nx_contactemail" width="150" />
+          <cell name="nx_contactperson" width="150" />
+          <cell name="nx_phone" width="150" />
+          <cell name="nx_taxcode" width="150" />
+          <cell name="nx_about" width="150" />
+          <cell name="nx_country" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nx_customer">
+          <attribute name="nx_customerid" />
+          <attribute name="nx_customername" />
+          <attribute name="createdon" />
+          <order attribute="nx_customername" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="nx_contactemail" />
+          <attribute name="nx_contactperson" />
+          <attribute name="nx_phone" />
+          <attribute name="nx_taxcode" />
+          <attribute name="nx_about" />
+          <attribute name="nx_country" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Customers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

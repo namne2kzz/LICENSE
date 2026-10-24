@@ -1,0 +1,11 @@
+<fetch>
+  <entity name="nx_activation">
+    <attribute name="nx_subject" />
+    <attribute name="nx_action" />
+    <attribute name="nx_fromstatus" />
+    <attribute name="nx_tostatus" />
+    <attribute name="nx_actor" />
+    <attribute name="nx_actedon" />
+    <order attribute="nx_actedon" descending="true" />
+  </entity>
+</fetch>

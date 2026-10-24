@@ -1,0 +1,65 @@
+# ---- Power Platform ----
+# Solution zip là artifact build, KHÔNG commit. Chỉ commit bản unpack trong solution/NexusLicensing/
+*.zip
+out/
+bin/
+obj/
+
+# pac CLI local state
+.pac/
+**/PkgAssets/
+
+# Solution packager logs
+*.log
+solution/**/*.txt.log
+
+# ---- .NET plug-in ----
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# Plug-in signing key (.snk) ĐƯỢC commit — theo khuyến nghị Microsoft.
+# Strong name KHÔNG phải cơ chế bảo mật, nó là định danh assembly: đổi key =
+# Dataverse coi là assembly khác, phải đăng ký lại mọi step + image.
+# Giữ trong repo để mọi máy build ra cùng một identity.
+
+# ---- PCF / Node ----
+node_modules/
+*.tsbuildinfo
+.npm/
+generated/
+
+# ---- Secrets / môi trường ----
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+secrets.json
+*.pfx
+*.p12
+*.pem
+*.cer
+*.publishsettings
+
+# Định danh tenant / environment thật — KHÔNG commit.
+# Mẫu: docs/ENVIRONMENT.local.example.md
+*.local.md
+*.local.json
+!*.local.example.md
+!*.local.example.json
+
+# ---- IDE / OS ----
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+Thumbs.db
+Desktop.ini
+*~

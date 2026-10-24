@@ -1,0 +1,10 @@
+<fetch>
+  <entity name="entity">
+    <attribute name="logicalname" />
+    <attribute name="objecttypecode" />
+    <filter>
+      <condition attribute="logicalname" operator="like" value="nx_%" />
+    </filter>
+    <order attribute="logicalname" />
+  </entity>
+</fetch>

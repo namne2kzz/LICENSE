@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{faf1c2ea-194a-4a9a-a70d-ea53bb1e15c3}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{ca9bd5aa-7316-4c93-bd73-272c90e38569}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2b093267-21b8-4893-bfae-8647f7d47216}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f04ad7a2-8103-42cb-a600-e7c3dbfa68e0}">
+                        <labels>
+                          <label description="Customer Name" languagecode="1033" />
+                        </labels>
+                        <control id="nx_customername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nx_customername" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9a482087-ee4f-4c80-9539-040d4db3424f}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41e73fd3-3663-4fda-9d4e-e08dc194992e}">
+                        <labels>
+                          <label description="Contact Email" languagecode="1033" />
+                        </labels>
+                        <control id="nx_contactemail" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="nx_contactemail" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12a23d50-e91b-46c2-9e93-e60f574e6252}">
+                        <labels>
+                          <label description="Contact Person" languagecode="1033" />
+                        </labels>
+                        <control id="nx_contactperson" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="nx_contactperson" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ea504285-346d-48bd-b369-78b572df3f6d}">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                        </labels>
+                        <control id="nx_phone" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="nx_phone" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae7bf6c8-b288-44c9-bfda-05c614bc5aaf}">
+                        <labels>
+                          <label description="Tax Code" languagecode="1033" />
+                        </labels>
+                        <control id="nx_taxcode" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="nx_taxcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9016d4f-7070-4152-9e90-51101db956b6}">
+                        <labels>
+                          <label description="About" languagecode="1033" />
+                        </labels>
+                        <control id="nx_about" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="nx_about" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ba4ae02d-36fc-4382-a76e-151d29492c5b}">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="nx_country" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="nx_country" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

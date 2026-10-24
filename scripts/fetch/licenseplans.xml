@@ -1,0 +1,11 @@
+<fetch>
+  <entity name="nx_licenseplan">
+    <attribute name="nx_planname" />
+    <attribute name="nx_plancode" />
+    <attribute name="nx_repocapacity" />
+    <attribute name="nx_durationmonths" />
+    <attribute name="nx_gracedays" />
+    <attribute name="nx_isactive" />
+    <order attribute="nx_repocapacity" />
+  </entity>
+</fetch>

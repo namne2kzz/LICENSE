@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e6b7434c-d9f0-4eeb-aeff-52af816dee90}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nx_planname" select="1" icon="1" preview="1">
+        <row name="result" id="nx_licenseplanid">
+          <cell name="nx_planname" width="300" />
+          <cell name="nx_plancode" width="150" />
+          <cell name="nx_repocapacity" width="150" />
+          <cell name="nx_durationmonths" width="150" />
+          <cell name="nx_gracedays" width="150" />
+          <cell name="nx_isactive" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nx_licenseplan">
+          <attribute name="nx_licenseplanid" />
+          <attribute name="nx_planname" />
+          <attribute name="createdon" />
+          <order attribute="nx_planname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="nx_plancode" />
+          <attribute name="nx_repocapacity" />
+          <attribute name="nx_durationmonths" />
+          <attribute name="nx_gracedays" />
+          <attribute name="nx_isactive" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active License Plans" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

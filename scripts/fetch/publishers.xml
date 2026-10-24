@@ -1,0 +1,7 @@
+<fetch>
+  <entity name="publisher">
+    <attribute name="friendlyname" />
+    <attribute name="uniquename" />
+    <attribute name="customizationprefix" />
+  </entity>
+</fetch>
