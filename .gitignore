@@ -54,6 +54,7 @@ secrets.json
 *.local.json
 !*.local.example.md
 !*.local.example.json
+docs
 
 # ---- IDE / OS ----
 .vs/
